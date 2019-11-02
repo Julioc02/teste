@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+			xmlns:th="http://www.thymeleaf.org">
+			<head>
+				<meta charset="utf-8">
+				<title>Monitória de Alunos - Editar Monitor</title>
+			</head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	           <div align="center" width="800px">
+	
+		<form th:object="${dados}" method="POST" action="/aluno">
+		<div class="form-group mb-2">
+		  
+			     <label for="exampleInputEmail2">Id: </label>
+			     <input type="text" class="form-control" th:field="*{id}" readonly="readonly">
+	    </div>
+			
+		  <div class="form-group">
+		  
+			     <label for="exampleInputEmail2">Numero da Chamada: </label>
+			     <input type="text" class="form-control" th:field="*{numero}">
+		  </div>
+			 <div class="form-group">
+			     <label for="exampleInputEmail2">Nome: </label>
+			     <input type="text" class="form-control" th:field="*{nome}">
+			  </div>
+			  <div class="form-group">
+			     <label for="exampleInputEmail2">Dia: </label>
+			     <input type="text" class="form-control" th:field="*{dia}">
+			  </div>
+			  <button type="submit" class="btn btn-success">Editar</button>
+	</form>
+ 
+
+		
+		</form>
+		</div>
+		
+		
+		
+		
